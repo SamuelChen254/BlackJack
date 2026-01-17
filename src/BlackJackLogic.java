@@ -8,7 +8,6 @@ public class BlackJackLogic {
    private int total = 0;
    private int dealerTotal = 0;
 
-
    public BlackJackLogic() {
        scan = new Scanner(System.in);
        player = new Player();
