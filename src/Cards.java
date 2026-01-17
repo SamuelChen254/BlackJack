@@ -35,4 +35,8 @@ public class Cards {
     public void remove(String word) {
         list.remove(word);
     }
+
+    public void reset() {
+        list = new ArrayList<>(Arrays.asList(cards));
+    }
 }
