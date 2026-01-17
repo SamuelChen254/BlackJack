@@ -112,16 +112,16 @@ public class BlackJackLogic {
                deck.reset();
            }
        }else {
-        System.out.println("---resetting---");
-        //Simulate resetting effect by sleeping for 1 second
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
-        player.addCash(bet);
-       }
-   }
+            System.out.println("---resetting---");
+            //Simulate resetting effect by sleeping for 1 second
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+            player.addCash(bet);
+          }
+        }    
 
    public boolean broke() {
        return player.getCash() <= 0;
